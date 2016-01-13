@@ -10,5 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>jpa_basics_default_datatypes</module>
+        <module>jpa_basics_TableAndColumn</module>
+        <module>jpa_basics_GeneratedValue_None</module>
     </modules>
 </project>
