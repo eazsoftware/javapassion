@@ -12,5 +12,12 @@
         <module>jpa_basics_default_datatypes</module>
         <module>jpa_basics_TableAndColumn</module>
         <module>jpa_basics_GeneratedValue_None</module>
+        <module>jpa_basics_GeneratedValue_Default_AUTO</module>
+        <module>jpa_basics_GeneratedValue_Identity</module>
+        <module>jpa_basics_GeneratedValue_Sequence</module>
+        <module>jpa_basics_Transient</module>
+        <module>jpa_basics_Temporal</module>
+        <module>jpa_basics_Enumerated</module>
+        <module>jpa_basics_lifecycle</module>
     </modules>
 </project>
