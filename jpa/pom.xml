@@ -19,5 +19,8 @@
         <module>jpa_basics_Temporal</module>
         <module>jpa_basics_Enumerated</module>
         <module>jpa_basics_lifecycle</module>
+        <module>jpa2.0_basics_lifecycle_detach</module>
+        <module>jpa_basics_WebJpa</module>
+	<module>jpa_basics_JsfJpa</module>
     </modules>
 </project>
