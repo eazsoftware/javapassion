@@ -22,5 +22,6 @@
         <module>jpa2.0_basics_lifecycle_detach</module>
         <module>jpa_basics_WebJpa</module>
 	<module>jpa_basics_JsfJpa</module>
+	<module>Myjpa_basics_WebJpa</module>
     </modules>
 </project>
