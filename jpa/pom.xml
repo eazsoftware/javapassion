@@ -23,5 +23,10 @@
         <module>jpa_basics_WebJpa</module>
 	<module>jpa_basics_JsfJpa</module>
 	<module>Myjpa_basics_WebJpa</module>
+	<module>jpa1_01_OneToOne_UniDirectional_NoAnnotation</module>
+	<module>jpa1_02_OneToOne_UniDirectional_Annotation</module>
+	<module>jpa1_03_OneToOne_UniDirectional_Annotation_JoinColumn</module>
+	<module>jpa1_04_OneToOne_Bidirectional_Annotation_CustomerIsOwner</module>
+	<module>jpa1_05_OneToOne_Bidirectional_Annotation_OrderIsOwner</module>
     </modules>
 </project>
