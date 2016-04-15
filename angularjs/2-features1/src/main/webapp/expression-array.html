@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+
+    <!-- initialize a JavaScript array -->
+    <div ng-init="numberArray = [1, 15, 19, 2, 40]">
+
+        <p>The numberArray contains: {{numberArray}}</p>
+        <p>The first number is {{ numberArray[0]}}.</p>
+        <p>The fourth number is {{ numberArray[3]}}.</p>
+
+        <p>The numberArray contains: {{numberArray}}</p>
+        <p>The first number plus the fourth number is: {{ numberArray[0] + numberArray[3]}}.</p>
+        <p ng-bind="The first number plus the fourth number is: {{ numberArray[0] + numberArray[3]}}">
+
+    </div>
+
+    <!-- For your own exercise
+           - Display the value of numberArray[0] + numberArray[3]
+        -->
+    <div ng-init="numberArrayExercise = [1, 15, 19, 2, 40]">
+
+        <p>The numberArray contains: {{numberArrayExercise}}</p>
+        <p>The first number plus the fourth number is: {{ numberArrayExercise[0] + numberArrayExercise[3]}}.</p>
+        <p ng-bind="The first number plus the fourth number is: {{ numberArrayExercise[0] + numberArrayExercise[3]}}">
+
+    </div>
+
+</body>
+
+</html>

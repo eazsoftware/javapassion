@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.eaz</groupId>
+        <artifactId>javapassion</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    
+    <groupId>com.eaz</groupId>
+    <artifactId>angularjs</artifactId>
+    <packaging>pom</packaging>
+    
+    <modules>
+        <module>1-introduction</module>
+    <module>2-features1</module>
+  </modules>
+</project>
