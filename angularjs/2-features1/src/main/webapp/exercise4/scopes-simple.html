@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="scopeExample">
+
+    <div ng-controller="MyController">
+
+        Enter your name:
+        <input type="text" ng-model="username">
+        <button ng-click="sayHello()">greet</button>
+        <br/> Greeting message: {{greeting}}
+        <h5>Age and date</h5>
+        <p>Age: {{age}}, and date: {{setDate("10/02/1972")}}</p>
+    </div>
+
+    <script>
+        var app = angular.module('scopeExample', []);
+
+        app.controller('MyController', function ($scope) {
+            $scope.username = "World";
+            $scope.sayHello = function () {
+                $scope.greeting = 'Hello ' + $scope.username + '!';
+            }
+
+            // <For your own exercise>
+            // -Add "age" property to the $scope with value of 30
+            // -Add "setDate()" method of Date JavaScript object 
+            // setting "date" property of the $scope
+            // -Display the "age" and "date" properties of the $scope
+            // -Verify the properties of $scope using "ng-inspect"
+            //  Chrome plug-in. (The Live Preview browser from the
+            //  Brackets editor does not show the "ng-inspect" plugin,
+            //  so you would need to open this file directly from the
+            //  Chrome browser.)
+
+            $scope.age = 30;
+            $scope.setDate = function (date) {
+                $scope.date = date;
+                return date;
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>

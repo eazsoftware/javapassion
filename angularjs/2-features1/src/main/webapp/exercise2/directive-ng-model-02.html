@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+
+    <div>
+        <p>Enter your name in the input box:</p>
+        <p>Name:
+            <input type="text" ng-model="user.name">
+        </p>
+
+        <p>Enter your age in the input box:</p>
+        <p>Age:
+            <input type="text" ng-model="user.age">
+        </p>
+
+        <p>Enter your hobby in the input box:</p>
+        <p>Hobby:
+            <input type="text" ng-model="user.hobby">
+        </p>
+
+        <!-- For your own exercise
+            - Add another input field "user.hobby"
+        -->
+        <p>The user is: {{ user }}</p>
+    </div>
+
+</body>
+
+</html>

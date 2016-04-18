@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+    <div ng-controller="myCtrl">
+
+        <ul>
+            <li ng-repeat="student in students">
+                {{ student.name + ' is ' + student.age + " years old." }}
+            </li>
+        </ul>
+        <p>totalAge = {{computeTotalage()}}</p>
+        <p>Average Age = {{computeAverageAge()}}</p>
+    </div>
+
+    <script>
+        var myApp = angular.module('myApp', []);
+
+        myApp.controller('myCtrl', ['$scope', function ($scope) {
+            $scope.students = [
+                {
+                    name: 'Joni Malon',
+                    age: 2
+				},
+                {
+                    name: 'Sang Shin',
+                    age: 9
+				},
+                {
+                    name: 'Mary Jones',
+                    age: 5
+				},
+                {
+                    name: 'Yunna kim',
+                    age: 7
+				}
+            ];
+
+            $scope.computeTotalage = function () {
+                var totalAge = 0;
+                for (i = 0; i < $scope.students.length; i++) {
+                    totalAge += $scope.students[i].age;
+                }
+                return totalAge;
+            };
+
+            // <For your own exercise>
+            // - Add a method that computes the average age
+            // - Display the computed average age
+            $scope.computeAverageAge = function () {
+                var averageAge = $scope.computeTotalage() / $scope.students.length;
+                console.log("Average age: " + averageAge);
+                return averageAge;
+            }
+
+		}]);
+    </script>
+
+</body>
+
+</html>

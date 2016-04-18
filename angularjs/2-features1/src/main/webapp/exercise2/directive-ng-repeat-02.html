@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+
+    <div ng-init="students=[
+                                {name:'Tom Jones',age:22},
+                                {name:'Sang Shin',age:99},
+                                {name:'Yunna Kim',age:45},
+                                {name:'Mary Jones',age:45}]">
+
+        <p>Looping with objects:</p>
+        <ul>
+            <li ng-repeat="student in students">
+                {{ student.name + ' is ' + student.age + ' years old.'}}</li>
+        </ul>
+
+    </div>
+
+    <!-- For your own exercise
+       - Add another student to the array
+    -->
+    <div ng-init="people=[
+                                {name:'Tom Jones',age:22},
+                                {name:'Sang Shin',age:99},
+                                {name:'Yunna Kim',age:45},
+                                {name:'Mary Jones',age:45},
+                                {name:'Reina Sofia',age:74}]">
+
+        <p>Looping with objects:</p>
+        <ul>
+            <li ng-repeat="person in people">
+                {{ person.name + ' is ' + person.age + ' years old.'}}</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

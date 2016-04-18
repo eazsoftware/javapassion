@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+    <div ng-controller="DoubleController">
+        <h5>Two times</h5>
+        <input ng-model="num"> equals {{ double(num) }}
+        <h5>Square</h5>
+        <input ng-model="num2"> equals {{ square(num2) }}
+    </div>
+
+    <script>
+        var myApp = angular.module('myApp', []);
+
+        myApp.controller('DoubleController', ['$scope', function ($scope) {
+
+            $scope.double = function (value) {
+                return value * 2;
+            };
+
+            // <For your own exercise>
+            // - Add "square" property to the "$scope", which gets set
+            //   with a function that computes a square value
+            // - Display the square value of the input value
+            $scope.square = function (value) {
+                return Math.sqrt(value);
+            };
+        }]);
+    </script>
+
+</body>
+
+</html>

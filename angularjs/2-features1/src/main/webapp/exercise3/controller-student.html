@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+    <div ng-controller="studentCtrl">
+
+        First Name:
+        <input type="text" ng-model="firstName">
+        <br> Last Name:
+        <input type="text" ng-model="lastName">
+        <br> Full Name: {{getFullName()}}
+
+    </div>
+
+    <div ng-controller="studentCtrl2">
+
+        Favourite hobby:
+        <input type="text" ng-model="hobby">
+        <br> Age:
+        <input type="text" ng-model="age">
+        <br> Hobby and age: {{getHobbyAndAge()}}
+
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+
+        app.controller('studentCtrl', function ($scope) {
+            $scope.firstName = "Sang";
+            $scope.lastName = "Shin";
+            $scope.getFullName = function () {
+                return $scope.firstName + " " + $scope.lastName;
+            }
+        });
+
+        // <For your own exercise>
+        // - Create "studentCtrl2", which sets "hobby" and "age" 
+        //   properies to its scope
+        // - Add "getHobbyAndAge()" method to the scope of
+        //   "studentCtrl2" controller
+        // - Create <div ng-controller="studentCtrl2">, which
+        //   display "hobby" and "age" properties through
+        //   "getHobbyAndAge()" method        
+        app.controller('studentCtrl2', function ($scope) {
+            $scope.hobby = "Basketball";
+            $scope.age = "33";
+            $scope.getHobbyAndAge = function () {
+                return $scope.hobby + " " + $scope.age;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

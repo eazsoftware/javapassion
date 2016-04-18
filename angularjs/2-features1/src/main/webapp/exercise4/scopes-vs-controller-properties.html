@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="invoice1">
+
+    <div ng-controller="InvoiceController as invoice">
+        <b>Invoice:</b>
+        <div>
+            Quantity:
+            <input type="number" min="0" ng-model="invoice.qty" required>
+        </div>
+        <div>
+            Costs:
+            <input type="number" min="0" ng-model="invoice.cost" required>
+            <select ng-model="invoice.inCurr">
+                <option ng-repeat="c in invoice.currencies">{{c}}</option>
+            </select>
+        </div>
+        <div>
+            Discount (%):
+            <input id="rangeDiscount" type="range" min="0" max="100" value="0" ng-model="invoice.discount" onchange="rangeDiscountValue.value=rangeDiscount.value" />
+            <input id="rangeDiscountValue" type="text" readonly />
+        </div>
+        <hr>
+        <div>
+            <b>Discount:</b>
+            <span ng-repeat="c in invoice.currencies">
+                {{invoice.totalDiscounted(c) | currency:c}}
+            </span>
+            <button class="btn" ng-click="invoice.payWithDiscount()">Pay with discount</button>
+        </div>
+        <hr>
+        <div>
+            <b>Total:</b>
+            <span ng-repeat="c in invoice.currencies">
+                {{invoice.total(c) | currency:c}}
+            </span>
+            <button class="btn" ng-click="invoice.pay()">Pay</button>
+        </div>
+        {{message}}
+
+    </div>
+
+    <script>
+        var app = angular.module('invoice1', []);
+
+        app.controller('InvoiceController', function ($scope) {
+            this.qty = 1;
+            this.cost = 2;
+            this.inCurr = 'EUR';
+            this.currencies = ['USD', 'EUR', 'CNY'];
+            this.usdToForeignRates = {
+                USD: 1,
+                EUR: 0.74,
+                CNY: 6.09
+            };
+
+            $scope.message = "";
+
+            this.total = function total(outCurr) {
+                return this.convertCurrency(this.qty * this.cost, this.inCurr, outCurr);
+            };
+            this.convertCurrency = function convertCurrency(amount, inCurr, outCurr) {
+                return amount * this.usdToForeignRates[outCurr] / this.usdToForeignRates[inCurr];
+            };
+            this.pay = function pay() {
+                $scope.message = "Thanks for the payment of " + this.total(this.inCurr) + " in " + this.inCurr;
+            };
+
+            // <For your own exercise>
+            // - Add "Discount" input field with the default value of 0%
+            // - Add "totalDiscounted" property with "totalDiscounted" function,
+            //   in which discount perceentage is applied
+            // - Display the discounted prices using 
+            //   {{invoice.totalDiscounted(c) | currency:c}}            
+            this.discount = 0;
+            this.totalDiscounted = function (currency) {
+                return this.total(currency) * this.discount / 100;
+            };
+            this.payWithDiscount = function payWithDiscount() {
+                var totalToPayAfterDiscount = this.total(this.inCurr) - this.totalDiscounted(this.inCurr);
+                $scope.message = "Thanks for the payment of " + totalToPayAfterDiscount + " in " + this.inCurr;
+            };
+        });
+    </script>
+
+</body>
+
+</html>

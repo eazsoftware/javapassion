@@ -14,5 +14,6 @@
     <modules>
         <module>1-introduction</module>
     <module>2-features1</module>
+    <module>3-features2</module>
   </modules>
 </project>

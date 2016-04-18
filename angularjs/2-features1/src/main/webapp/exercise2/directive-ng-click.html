@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+
+    <div ng-init="students=['Tom','Sang','Yunna','Mary']">
+        <p>Looping names with ng-repeat:</p>
+        <ul>
+            <li ng-repeat="student in students track by $index">
+                {{$index}}: {{ student }}
+            </li>
+        </ul>
+    </div>
+
+    <a href="" ng-click="students.push('Jina')">Add "Jina" as a new student</a>
+    <br/>
+    <!-- For your own exercise 
+       - Add another "ng-click", when clicked, removes a student - Use students.pop()
+    -->
+    <a href="" ng-click="students.pop()">Remove a student</a>
+    <br/>
+</body>
+
+</html>
