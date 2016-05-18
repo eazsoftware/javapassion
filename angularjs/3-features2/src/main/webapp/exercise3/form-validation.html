@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<style type="text/css">
+			input.ng-invalid.ng-dirty {
+				background-color: red;
+			}
+
+			input.ng-valid.ng-dirty {
+				background-color: green;
+			}
+		</style>
+	</head>
+
+	<body ng-app="MyApp">
+
+		<div ng-controller="UserController">
+
+			<form name="form" ng-submit="submit()" novalidate>
+				<label>Firstname</label>
+				<input name="firstname" type="text" ng-model="user.firstname" required minlength="5"/>
+				<br>
+				<label>Lastname</label>
+				<input type="text" ng-model="user.lastname" required/>
+				<br>
+				<label>Age</label>
+				<input type="number" ng-model="user.age" min="3" max="100" />
+				<br>
+				<label>Email</label>
+				<input type="email" ng-model="user.email" />
+				<br>
+				<button ng-disabled="form.$invalid" class="btn">Submit</button>
+			</form>
+
+			<br> User Model: {{user}}
+			<br> Form was submitted: {{wasSubmitted}}
+			<br> Firstname input valid: {{form.firstname.$valid}}
+			<br> Firstname input invalid: {{form.firstname.$invalid}}
+			<br> Firstname validation error: {{form.firstname.$error}}
+			<br> Form valid: {{form.$valid}}
+			<br>
+			<br> Form validation error:
+			<br> {{form.$error}}
+		</div>
+
+		<script>
+            var app = angular.module("MyApp", []);
+
+            app.controller("UserController", function ($scope) {
+                $scope.user = {};
+                $scope.wasSubmitted = false;
+
+                $scope.submit = function () {
+                    $scope.wasSubmitted = true;
+                };
+            });
+
+            // <For your own exercise>
+            // - Add "minlength=6" to the "user.lastname"
+            // - Display {{form.lastname.$valid}}, {{form.lastname.$invalid}},
+            //   and {{form.lastname.$error}}
+		</script>
+
+	</body>
+
+</html>
