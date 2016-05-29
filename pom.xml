@@ -10,6 +10,7 @@
     
     <modules>
         <module>jpa</module>
+        <module>angularjs</module>
     </modules>
     
     <properties>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    </head>
+
+    <body>
+
+        <div ng-app="myApp" ng-controller="myController">
+
+            <form>
+                <label>Choose a fruit among (apple, banana, cherry or orange)</label>
+                <input type="text" ng-model="fruit">
+            </form>
+
+            <img ng-show="fruit === 'apple'" ng-src="http://jpassion.com/misc/images/apple.png">
+            <img ng-show="fruit === 'banana'" ng-src="http://jpassion.com/misc/images/banana.png">
+            <img ng-show="fruit === 'cherry'" ng-src="http://jpassion.com/misc/images/cherry.png">
+            <img ng-show="fruit === 'orange'" ng-src="http://jpassion.com/misc/images/orange.png">
+        </div>
+
+        <script>
+            var myApp = angular.module('myApp', []);
+            myApp.controller('myController', function($scope) {
+            });
+
+            // <For your own exercise>
+            // - Add "orange" as another choice. The orange image is 
+            //   available as http://jpassion.com/misc/images/orange.png
+        </script>
+
+    </body>
+
+</html>
