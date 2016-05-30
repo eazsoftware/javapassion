@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    </head>
+
+    <body ng-app="MyApp">
+
+        <div ng-controller="MyController">
+            <p>absUrl: {{absUrl}} </p>
+            <p>protocol: {{protocol}}</p>
+            <p>host: {{host}}</p>
+            <br>
+            <button ng-click="setpath('/mypath1/mypath2')">Set Path</button>
+        </div>
+
+        <script>
+            var myApp = angular.module('MyApp', []);
+
+            myApp.controller('MyController', ['$scope', '$location', function($scope, $location) {
+                    // given url http://example.com/#/some/path?foo=bar&baz=xoxo
+                    $scope.absUrl = $location.absUrl();
+                    // => "http://example.com/#/some/path?foo=bar&baz=xoxo"
+
+                    $scope.protocol = $location.protocol();
+                    
+                    $scope.host = $location.host();
+
+                    $scope.setpath = function(path) {
+                        $location.path(path);
+                    };
+                }]);
+
+            // <For your own exercise>
+            // - Check the document of $location service from
+            //   https://docs.angularjs.org/api/ng/service/$location
+            // - Display the host of current url
+        </script>
+
+    </body>
+
+</html>

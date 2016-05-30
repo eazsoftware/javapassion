@@ -1,0 +1,41 @@
+{                                    
+  "posts": [                         
+    {                                
+      "id": 1,                       
+      "title": "title1",             
+      "body": "body1"                
+    },                               
+    {                                
+      "id": 2,                       
+      "title": "title2",             
+      "body": "body2"                
+    },                               
+    {                                
+      "id": 3,                       
+      "title": "title3",             
+      "body": "body3"                
+    },                               
+     {                               
+      "id": 4,                       
+      "title": "title4",             
+      "body": "body4"                
+    }                                
+  ],                                 
+  "users": [                         
+    {                                
+      "id": 1,                       
+      "firstName": "Sang",           
+      "lastName": "Shin"             
+    },                               
+    {                                
+      "id": 2,                       
+      "firstName": "Jonny",          
+      "lastName": "Parker"           
+    },                               
+    {                                
+      "id": 3,                       
+      "firstName": "Mary",           
+      "lastName": "Jones"            
+    }                                
+  ]                                  
+}  
