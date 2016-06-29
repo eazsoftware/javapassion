@@ -1,0 +1,62 @@
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Angular.js Example</title>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.5/angular.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.5/angular-route.min.js"></script>
+		<script>
+            var myApp = angular.module('myApp', ['ngRoute']);
+
+            // Configure routing
+            myApp.config(function ($routeProvider) {
+                $routeProvider.
+                    when('/', {
+                        template: '<p>root path</p>',
+                        controller: 'myController'
+                    }).
+                    when('/:myPath1', {
+                        template: '<p>myPath1</p>',
+                        controller: 'myController1'
+                    }).
+                    when('/:myPath1/:myPath2', {
+                        template: '<p>myPath1/myPath2</p>',
+                        controller: 'myController2'
+                    }).
+                    when('/:myPath1/:myPath2/:myPath3', {
+						template: '<p>myPath1/myPath2/myPath3</p>',
+						controller: 'myController3'
+					}).
+                    otherwise({
+                        redirectTo: '/'
+                    });
+            });
+
+            myApp.controller('myController', function ($scope) {});
+
+            myApp.controller('myController1', function ($scope, $routeParams) {
+                console.log($routeParams);
+            });
+
+            myApp.controller('myController2', function ($scope, $routeParams) {
+                console.log($routeParams);
+            });
+			
+            // <For your own exercise>
+            // - Add another path "/somePath1/somePath2/:myPath3" using 
+			//   "<p>/somePath1/somePath2/myPath3</p>" template fragment 
+			//   and "myController3" controller			
+
+            myApp.controller('myController3', function ($scope, $routeParams) {
+				console.log($routeParams);
+			});
+
+		</script>
+	</head>
+
+	<body>
+		<h4>Getting started with routing using ngRoute</h4>
+		<div ng-view></div>
+	</body>
+
+</html>

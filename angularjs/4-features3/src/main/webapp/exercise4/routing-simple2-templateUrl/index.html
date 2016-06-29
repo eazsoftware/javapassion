@@ -1,0 +1,57 @@
+<html ng-app="myApp">
+
+<head>
+	<meta charset="utf-8">
+	<title>Angular.js Example</title>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.5/angular.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.5/angular-route.min.js"></script>
+	<script>
+		var myApp = angular.module('myApp', ['ngRoute']);
+
+		// Configure routing
+		myApp.config(function ($routeProvider) {
+			$routeProvider.
+			when('/', {
+				templateUrl: 'partials/template0.html',
+				controller: 'myController1'
+			}).
+			when('/:myPath1', {
+				templateUrl: 'partials/template1.html',
+				controller: 'myController2'
+			}).
+			when('/:myPath1/:myPath2', {
+				templateUrl: 'partials/template2.html',
+				controller: 'myController3'
+			}).
+			otherwise({
+				redirectTo: '/'
+			});
+		});
+
+		myApp.controller('myController1', function ($scope) {
+
+		});
+
+		myApp.controller('myController2', function ($scope, $routeParams) {
+			$scope.path = $routeParams;
+			console.log($routeParams); // $routeParams refers to {countryName: china}
+		});
+
+		myApp.controller('myController3', function ($scope, $routeParams) {
+			$scope.path = $routeParams;
+			console.log($routeParams); // $routeParams refers to {countryName: china}
+		});
+
+		// <For your own exercise>
+		// - Modify the <For your own exercise> of the previous
+		//   "routing-simple1-template.html" to use the "templateURL"
+		//   instead of "template".
+	</script>
+</head>
+
+<body>
+	<h4>Getting started with routing using ngRoute</h4>
+	<div ng-view></div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="MyApp">
+
+	<div ng-controller="MyController">
+		<button ng-click="timeout(2000)">Timeout in 2 seconds</button>
+		<button ng-click="timeout(3000)">Timeout in 3 seconds</button>
+		<button ng-click="timeout(5000)">Timeout in 5 seconds</button>
+		<p>{{message}} </p>
+	</div>
+
+	<script>
+		var myApp = angular.module('MyApp', []);
+
+		myApp.controller('MyController', ['$scope', '$timeout', function ($scope, $timeout) {
+			$scope.message = "Timeout has not occurred yet";
+
+			$scope.timeout = function (duration) {
+				$scope.duration = duration;
+				$timeout(callTimeout, duration);
+			};
+
+			function callTimeout() {
+				$scope.message = "Timeout occurred in " + $scope.duration / 1000 + " seconds";
+			};
+
+		}]);
+
+		// <For your own exercise>
+		// - Add another timeout with 5 seconds
+	</script>
+
+</body>
+
+</html>

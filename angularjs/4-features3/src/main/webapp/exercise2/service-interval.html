@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body ng-app="MyApp">
+
+	<div ng-controller="MyController">
+		<button ng-click="callAtInterval(2000)">Timeout every 2 seconds</button>
+		<button ng-click="callAtInterval(3000)">Timeout every 3 seconds</button>
+		<button ng-click="callAtIntervalNew(4000)">Timeout every 4 seconds</button>
+		<ul>
+			<li ng-repeat="message in messages">{{message}}</li>
+		</ul>
+	</div>
+
+	<script>
+		var myApp = angular.module('MyApp', []);
+
+		myApp.controller('MyController', ['$scope', '$interval', function ($scope, $interval) {
+			$scope.messages = [];
+			$scope.totalDurationInSeconds = 0;
+			$scope.duration = 0;
+
+			$scope.callAtInterval = function (duration) {
+				$interval(callTimeout, duration);
+				$scope.duration = duration;
+			};
+
+			function callTimeout() {
+				$scope.totalDurationInSeconds += $scope.duration / 1000;
+				$scope.messages.push("Timeout occurred in " + $scope.totalDurationInSeconds + " seconds");
+			};
+			
+			// <For your own exercise>
+			// - Time out every 4 seconds and display the number of timeouts
+			//   that have occurred			
+			$scope.callAtIntervalNew = function (duration) {
+				$interval(callTimeoutNew, duration);
+                            $scope.duration = duration;
+                        };
+
+                        function callTimeoutNew() {
+                            $scope.totalDurationInSeconds += $scope.duration / 1000;
+                            $scope.messages.push("Timeout occurred in " + $scope.totalDurationInSeconds + " seconds, #timeouts: [" + $scope.messages.length + "]");
+                        }                        ;
+
+
+		}]);
+	</script>
+
+</body>
+
+</html>
