@@ -28,3 +28,7 @@
 /jpa/jpa_1_mapping1/jpa1_14_OneToMany_Bidirectional_Annotation_JoinTable_Cascade/target/
 /jpa/jpa_1_mapping1/jpa1_15_OneToMany_Bidirectional_Annotation_JoinTable_Custom/target/
 /jpa/jpa_1_mapping1/jpa1_16_OneToMany_Bidirectional_Annotation_ForeignKey/target/
+/jpa/jpa_1_mapping1/jpa1_31_ManyToMany_Bidirectional_JoinTable_EventIsOwner/target/
+/jpa/jpa_1_mapping1/jpa1_32_ManyToMany_Bidirectional_JoinTable_SpeakerIsOwner/target/
+/jpa/jpa_1_mapping1/jpa1_33_ManyToMany_Bidirectional_JoinTable_Custom/target/
+/jpa/jpa_1_mapping1/homework_jpa_mapping1/target/

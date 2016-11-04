@@ -1,0 +1,5 @@
+ALTER TABLE my_join_table DROP CONSTRAINT myjintablemyventid
+ALTER TABLE my_join_table DROP CONSTRAINT myjntablemyspkerid
+DROP TABLE my_join_table
+DROP TABLE SPEAKER
+DROP TABLE EVENT

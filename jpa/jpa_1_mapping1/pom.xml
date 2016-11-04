@@ -20,5 +20,9 @@
         <module>jpa1_14_OneToMany_Bidirectional_Annotation_JoinTable_Cascade</module>
         <module>jpa1_15_OneToMany_Bidirectional_Annotation_JoinTable_Custom</module>
         <module>jpa1_16_OneToMany_Bidirectional_Annotation_ForeignKey</module>
+        <module>jpa1_31_ManyToMany_Bidirectional_JoinTable_EventIsOwner</module>
+        <module>jpa1_32_ManyToMany_Bidirectional_JoinTable_SpeakerIsOwner</module>
+        <module>jpa1_33_ManyToMany_Bidirectional_JoinTable_Custom</module>
+        <module>homework_jpa_mapping1</module>
     </modules>
 </project>
