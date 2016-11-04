@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.eaz</groupId>
+        <artifactId>jpa</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>jpa_1_mapping1</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>jpa1_01_OneToOne_UniDirectional_NoAnnotation</module>
+        <module>jpa1_02_OneToOne_UniDirectional_Annotation</module>
+        <module>jpa1_03_OneToOne_UniDirectional_Annotation_JoinColumn</module>
+        <module>jpa1_04_OneToOne_Bidirectional_Annotation_CustomerIsOwner</module>
+        <module>jpa1_05_OneToOne_Bidirectional_Annotation_OrderIsOwner</module>
+        <module>jpa1_11_OneToMany_Unidirectional_NoAnnotation_JoinTable_NoCascade</module>
+        <module>jpa1_12_OneToMany_UniDirectional_Annotation_JoinTable_Cascade</module>
+        <module>jpa1_13_OneToMany_Bidirectional_NoAnnotation_JoinTable_NoCascade</module>
+        <module>jpa1_14_OneToMany_Bidirectional_Annotation_JoinTable_Cascade</module>
+        <module>jpa1_15_OneToMany_Bidirectional_Annotation_JoinTable_Custom</module>
+        <module>jpa1_16_OneToMany_Bidirectional_Annotation_ForeignKey</module>
+    </modules>
+</project>

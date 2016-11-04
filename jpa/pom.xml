@@ -9,30 +9,7 @@
     <artifactId>jpa</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>jpa_basics_default_datatypes</module>
-        <module>jpa_basics_TableAndColumn</module>
-        <module>jpa_basics_GeneratedValue_None</module>
-        <module>jpa_basics_GeneratedValue_Default_AUTO</module>
-        <module>jpa_basics_GeneratedValue_Identity</module>
-        <module>jpa_basics_GeneratedValue_Sequence</module>
-        <module>jpa_basics_Transient</module>
-        <module>jpa_basics_Temporal</module>
-        <module>jpa_basics_Enumerated</module>
-        <module>jpa_basics_lifecycle</module>
-        <module>jpa2.0_basics_lifecycle_detach</module>
-        <module>jpa_basics_WebJpa</module>
-	<module>jpa_basics_JsfJpa</module>
-	<module>Myjpa_basics_WebJpa</module>
-	<module>jpa1_01_OneToOne_UniDirectional_NoAnnotation</module>
-	<module>jpa1_02_OneToOne_UniDirectional_Annotation</module>
-	<module>jpa1_03_OneToOne_UniDirectional_Annotation_JoinColumn</module>
-	<module>jpa1_04_OneToOne_Bidirectional_Annotation_CustomerIsOwner</module>
-	<module>jpa1_05_OneToOne_Bidirectional_Annotation_OrderIsOwner</module>
-	<module>jpa1_11_OneToMany_Unidirectional_NoAnnotation_JoinTable_NoCascade</module>
-	<module>jpa1_12_OneToMany_UniDirectional_Annotation_JoinTable_Cascade</module>
-	<module>jpa1_13_OneToMany_Bidirectional_NoAnnotation_JoinTable_NoCascade</module>
-	<module>jpa1_14_OneToMany_Bidirectional_Annotation_JoinTable_Cascade</module>
-	<module>jpa1_15_OneToMany_Bidirectional_Annotation_JoinTable_Custom</module>
-	<module>jpa1_16_OneToMany_Bidirectional_Annotation_ForeignKey</module>
+        <module>jpa_basics</module>
+        <module>jpa_1_mapping1</module>
     </modules>
 </project>
