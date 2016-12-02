@@ -3,14 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.eaz</groupId>
-        <artifactId>javapassion</artifactId>
+        <artifactId>jpa</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>jpa</artifactId>
+    <artifactId>jpa1_mapping2</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>jpa_basics</module>
-        <module>jpa_1_mapping1</module>
-        <module>jpa1_mapping2</module>
+        <module>ORInheritanceJOINED</module>
+        <module>ORInheritanceSINGLE_TABLE</module>
+        <module>jpa2_02_orinheritance_singletable</module>
+        <module>jpa2_02_orinheritance_joined</module>
+        <module>jpa2_02_orinheritance_tableperclass</module>
     </modules>
 </project>
