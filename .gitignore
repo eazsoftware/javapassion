@@ -32,3 +32,14 @@
 /jpa/jpa_1_mapping1/jpa1_32_ManyToMany_Bidirectional_JoinTable_SpeakerIsOwner/target/
 /jpa/jpa_1_mapping1/jpa1_33_ManyToMany_Bidirectional_JoinTable_Custom/target/
 /jpa/jpa_1_mapping1/homework_jpa_mapping1/target/
+/jpa/jpa1_mapping2/ORInheritanceJOINED/target/
+/jpa/jpa1_mapping2/ORInheritanceSINGLE_TABLE/target/
+/jpa/jpa1_mapping2/jpa2_01_orinheritance_single_table/target/
+/jpa/jpa1_mapping2/jpa2_01_orinheritance_singletable/target/
+/jpa/jpa1_mapping2/jpa2_02_orinheritance_singletable/target/
+/jpa/jpa1_mapping2/jpa2_02_orinheritance_joined/target/
+/jpa/jpa1_mapping2/jpa2_02_orinheritance_tableperclass/target/
+/jpa/jpa1_jpql/jpa1_jpql_01_jpaquery_simple_where_clause/target/
+/jpa/jpa1_jpql/jpa1_jpql_02_jpaquery_simple_order_by/target/
+/jpa/jpa1_jpql/jpa1_jpql_03_jpaquery_simple_range/target/
+/jpa/jpa1_jpql/jpa1_jpql_04_jpaquery_simple_query_parameters/target/
