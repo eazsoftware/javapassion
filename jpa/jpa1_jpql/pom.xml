@@ -13,5 +13,8 @@
         <module>jpa1_jpql_02_jpaquery_simple_order_by</module>
         <module>jpa1_jpql_03_jpaquery_simple_range</module>
         <module>jpa1_jpql_04_jpaquery_simple_query_parameters</module>
+        <module>jpa1_jpql_05_jpaquery_relation_traversal1</module>
+        <module>jpa1_jpql_06_jpaquery_relation_traversal2</module>
+        <module>jpa1_jpql_07_jpaquery_relation_traversal3</module>
     </modules>
 </project>

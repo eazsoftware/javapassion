@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
+  <persistence-unit name="CustomerServicePU" transaction-type="RESOURCE_LOCAL">
+    <class>customer.model.Customer</class>
+    <class>customer.model.DiscountCode</class>
+    <properties>
+      <property name="toplink.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="toplink.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
+      <property name="toplink.jdbc.user" value="app"/>
+      <property name="toplink.jdbc.password" value="app"/>
+      <!-- enable this property to see SQL and other logging -->
+      <!-- property name="toplink.logging.level" value="FINE"/ -->
+      <property name="" value="app"/>
+    </properties>
+  </persistence-unit>
+</persistence>
