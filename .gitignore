@@ -43,3 +43,15 @@
 /jpa/jpa1_jpql/jpa1_jpql_02_jpaquery_simple_order_by/target/
 /jpa/jpa1_jpql/jpa1_jpql_03_jpaquery_simple_range/target/
 /jpa/jpa1_jpql/jpa1_jpql_04_jpaquery_simple_query_parameters/target/
+/jpa/jpa1_jpql/jpa1_jpql_05_jpaquery_relation_traversal1/target/
+/jpa/jpa1_mapping2/CustomerApp/nbproject/private/
+/jpa/jpa1_jpql/jpa1_jpql_06_jpaquery_relation_traversal2/target/
+/jpa/jpa1_jpql/jpa1_jpql_07_jpaquery_relation_traversal3/target/
+/jpa/jpa1_jpql/jpa1_jpql_08_jpaquery_relation_join_fetch/target/
+/jpa/jpa1_jpql/jpa1_jpql_09_jpaquery_function_string_manipulation/target/
+/jpa/jpa1_mapping2/jpa1_jpql_10_jpaquery_function_arithmetic_operation/nbproject/private/
+/jpa/jpa1_jpql/jpa1_jpql_10_jpaquery_function_arithmetic_operation/target/
+/jpa/jpa1_jpql/jpa1_jpql_11_jpaquery_aggregates/target/
+/jpa/jpa1_jpql/jpa1_jpql_12_jpaquery_polymorphic1_single_table/target/
+/jpa/jpa1_jpql/jpa1_jpql_13_jpaquery_polymorphic1_single_table/target/
+/jpa/jpa1_jpql/jpa1_jpql_13_jpaquery_polymorphic2_joined/target/

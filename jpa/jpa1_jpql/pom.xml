@@ -16,5 +16,12 @@
         <module>jpa1_jpql_05_jpaquery_relation_traversal1</module>
         <module>jpa1_jpql_06_jpaquery_relation_traversal2</module>
         <module>jpa1_jpql_07_jpaquery_relation_traversal3</module>
+        <module>jpa1_jpql_08_jpaquery_relation_join_fetch</module>
+        <module>jpa1_jpql_09_jpaquery_function_string_manipulation</module>
+        <module>jpa1_jpql_10_jpaquery_function_arithmetic_operation</module>
+        <module>jpa1_jpql_11_jpaquery_aggregates</module>
+        <module>jpa1_jpql_12_jpaquery_polymorphic1_single_table</module>
+        <module>jpa1_jpql_13_jpaquery_polymorphic1_single_table</module>
+        <module>jpa1_jpql_13_jpaquery_polymorphic2_joined</module>
     </modules>
 </project>
