@@ -55,3 +55,14 @@
 /jpa/jpa1_jpql/jpa1_jpql_12_jpaquery_polymorphic1_single_table/target/
 /jpa/jpa1_jpql/jpa1_jpql_13_jpaquery_polymorphic1_single_table/target/
 /jpa/jpa1_jpql/jpa1_jpql_13_jpaquery_polymorphic2_joined/target/
+/jpa/jpa1_jpql/jpa1_jpql_14_jpaquery_named_query1/target/
+/jpa/jpa1_jpql/jpa1_jpql_15_jpaquery_bulk_delete/target/
+/jpa/jpa1_jpql/jpa1_jpql_16_jpaquery_bulk_update/target/
+/jpa/jpa1_jpql/jpa1_jpql_17_jpaquery_subquery/target/
+/jpa/jpa1_jpql/jpa1_jpql_18_jpaquery_subquery_all_or_any/target/
+/jpa/jpa1_jpql/jpa1_jpql_19_jpaquery_subquery_exists/target/
+/jpa/jpa1_jpql/jpa1_jpql_20_jpaquery_simple_group_by_and_having/target/
+/jpa/jpa1_mapping2/jpa1_jpql_21_jpaquery_sql_native/nbproject/private/
+/jpa/jpa1_jpql/jpa1_jpql_21_jpaquery_sql_native/target/
+/jpa/jpa1_jpql/jpa1_jpql_06_jpaquery_relation_traversal2 (copy)/target/
+/jpa/jpa1_jpql/jpa1_jpql_exercise/target/

@@ -23,5 +23,14 @@
         <module>jpa1_jpql_12_jpaquery_polymorphic1_single_table</module>
         <module>jpa1_jpql_13_jpaquery_polymorphic1_single_table</module>
         <module>jpa1_jpql_13_jpaquery_polymorphic2_joined</module>
+        <module>jpa1_jpql_14_jpaquery_named_query1</module>
+        <module>jpa1_jpql_15_jpaquery_bulk_delete</module>
+        <module>jpa1_jpql_16_jpaquery_bulk_update</module>
+        <module>jpa1_jpql_17_jpaquery_subquery</module>
+        <module>jpa1_jpql_18_jpaquery_subquery_all_or_any</module>
+        <module>jpa1_jpql_19_jpaquery_subquery_exists</module>
+        <module>jpa1_jpql_20_jpaquery_simple_group_by_and_having</module>
+        <module>jpa1_jpql_21_jpaquery_sql_native</module>
+        <module>jpa1_jpql_exercise</module>
     </modules>
 </project>
