@@ -1,0 +1,5 @@
+ALTER TABLE atable DROP CONSTRAINT FK_atable_ID
+ALTER TABLE salary DROP CONSTRAINT FK_salary_ID
+DROP TABLE my_own_employee_table
+DROP TABLE atable
+DROP TABLE salary
