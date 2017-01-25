@@ -3,17 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.eaz</groupId>
-        <artifactId>javapassion</artifactId>
+        <artifactId>jpa1_advanced</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>jpa</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>jpa_basics</module>
-        <module>jpa_1_mapping1</module>
-        <module>jpa1_mapping2</module>
-        <module>jpa1_jpql</module>
-        <module>jpa1_advanced</module>
-        <module>jpa1_transaction</module>
-    </modules>
+    <artifactId>jpa1_advanced_04_compositeprimarykey_idclass</artifactId>
+    <packaging>jar</packaging>
 </project>

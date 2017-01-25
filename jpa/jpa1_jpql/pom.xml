@@ -21,7 +21,6 @@
         <module>jpa1_jpql_10_jpaquery_function_arithmetic_operation</module>
         <module>jpa1_jpql_11_jpaquery_aggregates</module>
         <module>jpa1_jpql_12_jpaquery_polymorphic1_single_table</module>
-        <module>jpa1_jpql_13_jpaquery_polymorphic1_single_table</module>
         <module>jpa1_jpql_13_jpaquery_polymorphic2_joined</module>
         <module>jpa1_jpql_14_jpaquery_named_query1</module>
         <module>jpa1_jpql_15_jpaquery_bulk_delete</module>

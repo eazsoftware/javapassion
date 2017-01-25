@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
   <persistence-unit name="CustomerServicePU" transaction-type="RESOURCE_LOCAL">
-    <class>product.client.ProductCode</class>
-    <class>product.client.Manufacturer</class>
-    <class>product.client.Product</class>
-    <class>xxx.MicroMarket</class>
-    <class>xxx.Customer</class>
-    <class>xxx.DiscountCode</class>
-    <class>yyy.DiscountCode</class>
-    <class>yyy.Customer</class>
-    <class>yyy.MicroMarket</class>
-    <class>xxx.PurchaseOrder</class>
+    <class>entities.Product</class>
+    <class>entities.ProductCode</class>
+    <class>entities.Manufacturer</class>
     <properties>
       <property name="toplink.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
       <property name="toplink.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>

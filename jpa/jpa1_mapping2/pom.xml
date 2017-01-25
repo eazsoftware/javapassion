@@ -9,8 +9,6 @@
     <artifactId>jpa1_mapping2</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>ORInheritanceJOINED</module>
-        <module>ORInheritanceSINGLE_TABLE</module>
         <module>jpa2_02_orinheritance_singletable</module>
         <module>jpa2_02_orinheritance_joined</module>
         <module>jpa2_02_orinheritance_tableperclass</module>

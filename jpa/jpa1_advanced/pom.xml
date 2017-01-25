@@ -11,6 +11,11 @@
     <modules>
         <module>jpa1_advanced_01_embeddable</module>
         <module>jpa1_advanced_02_secondarytable</module>
+        <module>jpa1_advanced_03_compositeprimarykey</module>
+        <module>jpa1_advanced_04_compositeprimarykey_idclass</module>
+        <module>jpa1_advanced_05_fetchmode_eager</module>
+        <module>jpa1_advanced_06_fetchmode_lazy</module>
+        <module>jpa1_advanced_07_listener</module>
     </modules>
     
     <url>http://maven.apache.org</url>

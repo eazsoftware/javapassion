@@ -68,3 +68,8 @@
 /jpa/jpa1_jpql/jpa1_jpql_exercise/target/
 /jpa/jpa1_advanced/jpa1_advanced_01_embeddable/target/
 /jpa/jpa1_advanced/jpa1_advanced_02_secondarytable/target/
+/jpa/jpa1_advanced/jpa1_advanced_03_compositeprimarykey/target/
+/jpa/jpa1_advanced/jpa1_advanced_04_compositeprimarykey_idclass/target/
+/jpa/jpa1_advanced/jpa1_advanced_05_fetchmode_eager/target/
+/jpa/jpa1_advanced/jpa1_advanced_06_fetchmode_lazy/target/
+/jpa/jpa1_advanced/jpa1_advanced_07_listener/target/
